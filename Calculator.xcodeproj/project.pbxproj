@@ -44,6 +44,7 @@
 		34D3E9632AB910180013218B /* CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		34D3E9672AB910180013218B /* CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorUITests.swift; sourceTree = "<group>"; };
 		34D3E9692AB910180013218B /* CalculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		34D3E9762AB917F40013218B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +75,7 @@
 		34D3E9402AB910160013218B = {
 			isa = PBXGroup;
 			children = (
+				34D3E9762AB917F40013218B /* README.md */,
 				34D3E94B2AB910160013218B /* Calculator */,
 				34D3E95C2AB910180013218B /* CalculatorTests */,
 				34D3E9662AB910180013218B /* CalculatorUITests */,

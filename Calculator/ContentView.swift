@@ -9,19 +9,19 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var result = "0"
+    @State var result = 0
     
     var body: some View {
         VStack(alignment: .trailing, spacing: 0) {
-            Text("\(result.count)")
+            Text("\(String(result).count)")
                 .foregroundColor(Color.red)
             Spacer()
             HStack {
-                Text(result)
+                Text(String(result))
                     .padding()
                     .lineLimit(1)
                     .font(.system(size: CGFloat(80 /
-                                                Int(Double(result.count + 10) / 10.0)
+                                                Int(Double(String(result).count + 10) / 8.0)
                                                )))
                     .foregroundColor(Color.white)
                     .frame(maxWidth: .infinity)
@@ -61,21 +61,21 @@ struct ContentView: View {
             
             HStack {
                 Button("7") {
-                    
+                    result = (result * 10) + 7
                 }
                 .padding()
                 .frame(maxWidth: .infinity)
                 
                 
                 Button("8") {
-                    
+                    result = (result * 10) + 8
                 }
                 .padding()
                 .frame(maxWidth: .infinity)
                 
                 
                 Button("9") {
-                    
+                    result = (result * 10) + 9
                 }
                 .padding()
                 .frame(maxWidth: .infinity)
@@ -92,21 +92,21 @@ struct ContentView: View {
             
             HStack {
                 Button("4") {
-                    
+                    result = (result * 10) + 4
                 }
                 .padding()
                 .frame(maxWidth: .infinity)
                 
                 
                 Button("5") {
-                    
+                    result = (result * 10) + 5
                 }
                 .padding()
                 .frame(maxWidth: .infinity)
                 
                 
                 Button("6") {
-                    
+                    result = (result * 10) + 5
                 }
                 .padding()
                 .frame(maxWidth: .infinity)
@@ -123,21 +123,21 @@ struct ContentView: View {
             
             HStack {
                 Button("1") {
-                    result += "1"
+                    result = (result * 10) + 1
                 }
                 .padding()
                 .frame(maxWidth: .infinity)
                 
                 
                 Button("2") {
-                    result += "2"
+                    result = (result * 10) + 2
                 }
                 .padding()
                 .frame(maxWidth: .infinity)
                 
                 
                 Button("3") {
-                    
+                    result = (result * 10) + 3
                 }
                 .padding()
                 .frame(maxWidth: .infinity)
@@ -156,7 +156,7 @@ struct ContentView: View {
             GeometryReader  { geometry in
                 HStack {
                     Button("0") {
-                        
+                        result = (result * 10) + 0
                     }
                     .padding()
                     .frame(minWidth: geometry.size.width / 2)

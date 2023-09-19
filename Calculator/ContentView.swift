@@ -11,6 +11,10 @@ struct ContentView: View {
     
     @State var result = 0
     
+    func process(digit: Int) {
+        result = (result * 10) + digit
+    }
+    
     var body: some View {
         VStack(alignment: .trailing, spacing: 0) {
             Text("\(String(result).count)")
@@ -30,7 +34,7 @@ struct ContentView: View {
             
             HStack {
                 Button("AC") {
-                    
+                    result = 0
                 }
                 .padding()
                 .frame(maxWidth: .infinity)
@@ -61,21 +65,21 @@ struct ContentView: View {
             
             HStack {
                 Button("7") {
-                    result = (result * 10) + 7
+                    process(digit: 7)
                 }
                 .padding()
                 .frame(maxWidth: .infinity)
                 
                 
                 Button("8") {
-                    result = (result * 10) + 8
+                    process(digit: 8)
                 }
                 .padding()
                 .frame(maxWidth: .infinity)
                 
                 
                 Button("9") {
-                    result = (result * 10) + 9
+                    process(digit: 9)
                 }
                 .padding()
                 .frame(maxWidth: .infinity)
@@ -92,21 +96,21 @@ struct ContentView: View {
             
             HStack {
                 Button("4") {
-                    result = (result * 10) + 4
+                    process(digit: 4)
                 }
                 .padding()
                 .frame(maxWidth: .infinity)
                 
                 
                 Button("5") {
-                    result = (result * 10) + 5
+                    process(digit: 5)
                 }
                 .padding()
                 .frame(maxWidth: .infinity)
                 
                 
                 Button("6") {
-                    result = (result * 10) + 5
+                    process(digit: 6)
                 }
                 .padding()
                 .frame(maxWidth: .infinity)
@@ -123,21 +127,21 @@ struct ContentView: View {
             
             HStack {
                 Button("1") {
-                    result = (result * 10) + 1
+                    process(digit: 1)
                 }
                 .padding()
                 .frame(maxWidth: .infinity)
                 
                 
                 Button("2") {
-                    result = (result * 10) + 2
+                    process(digit: 2)
                 }
                 .padding()
                 .frame(maxWidth: .infinity)
                 
                 
                 Button("3") {
-                    result = (result * 10) + 3
+                    process(digit: 3)
                 }
                 .padding()
                 .frame(maxWidth: .infinity)
